@@ -22,12 +22,13 @@ int hello(char *nickname)
 
 int battle(int player_gold)
 {
-   int goblin_hp;
+   int goblin_hp=3;
    int goblin_gold = 15;
-         for(goblin_hp =3;goblin_hp >= 0; goblin_hp--)
+         printf("Goblin HP = %d\n", goblin_hp);
+         while( goblin_hp >= 0 )
         {
-            if(goblin_hp!=3|| goblin_hp>=0)
-         printf("You kick goblin.\t HP:%d\n", goblin_hp-1);
+         if(goblin_hp!=3|| goblin_hp>=0)
+         printf("You kick goblin 1 damage.\t HP:%d\n", goblin_hp-1);
          if (goblin_hp <=2)
          {
             printf("You defeat it.\n");
@@ -36,6 +37,7 @@ int battle(int player_gold)
              goblin_gold, player_gold);
             break;
          }
+         goblin_hp--;
         }
         return player_gold;
 }

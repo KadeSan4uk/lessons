@@ -6,7 +6,7 @@
 int main(void)
 {
     rand();// 0->..
-    printf("Rand MAX:%lld\n",RAND_MAX);
+    printf("Rand MAX:%d\n",RAND_MAX);
 
     char nickname[10];
     int player_gold=0;

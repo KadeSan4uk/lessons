@@ -1,0 +1,9 @@
+{
+    "cmake.configureOnOpen": true,
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "stdbool.h": "c",
+        "rpghadder.h": "c",
+        "string.h": "c"
+    }
+}
