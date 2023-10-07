@@ -1,14 +1,17 @@
 #include <stdio.h>
 void ft_ft(int *nbr)
 {
-    *nbr;
+    *nbr = 42;
 }
 
 int main()
 {
-    int i = 42;
-    ft_ft(&i);
-    printf("%d\n", i);
+    int i = 0;
+    int *nbr = &i;
+
+    ft_ft(nbr);
+
+    printf("%d\n", *nbr);
 
     return 0;
 }
